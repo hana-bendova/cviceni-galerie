@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -15,6 +16,44 @@ body {
 img {
   display: block;
 }
+
+
+.foto img {
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+  .foto {
+    width: 50%;
+  }
+}
+
+@media (min-width: 650px) {
+  .foto {
+    width: calc(100% / 3);
+  }
+}
+
+@media (min-width: 800px) {
+  .foto {
+    width: calc(100% / 4);
+  }
+}
+
+@media (min-width: 1000px) {
+  .foto {
+    width: calc(100% / 6);
+  }
+}
+
 
 /*
 Zařiď, aby se fotogalerie měnila tak, že pro různé
